@@ -1,0 +1,2 @@
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/universal-B85hpCco.js","assets/browser-CRVLLKHW.js"])))=>i.map(i=>d[i]);
+import{n as e,r as t}from"./index-DCdsZCre.js";async function n(n){if(/\.(csv|txt)$/i.test(n.name)||n.type===`text/csv`)return e(await n.text());let{readSheet:r}=await t(async()=>{let{readSheet:e}=await import(`./universal-B85hpCco.js`);return{readSheet:e}},__vite__mapDeps([0,1]));return await r(await n.arrayBuffer())}export{n as leerHoja};
