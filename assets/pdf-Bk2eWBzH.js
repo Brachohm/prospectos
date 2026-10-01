@@ -1,3 +1,0 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/pdf-Dr_moAE8.js","assets/index-CBlOpP9j.js","assets/index-B-G9blrj.css"])))=>i.map(i=>d[i]);
-import{n as e,t}from"./index-CBlOpP9j.js";async function n(n,r){let[i,a]=await Promise.all([e(()=>import(`./pdf-Dr_moAE8.js`),__vite__mapDeps([0,1,2])),e(()=>import(`./pdf.worker.min-BmSZNfKQ.js`),[])]);i.GlobalWorkerOptions.workerSrc=a.default;let o=await i.getDocument({data:new Uint8Array(n)}).promise,s=[];try{for(let e=1;e<=o.numPages;e++){let n=await o.getPage(e),i=await n.getTextContent(),a=``;for(let e of i.items)`str`in e&&(a+=e.str+(e.hasEOL?`
-`:` `));s.push(t(a)),n.cleanup(),r?.(e,o.numPages)}}finally{o.destroy()}return s}export{n as textoDePDF};
