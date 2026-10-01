@@ -1,0 +1,3 @@
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/pdf-CCzBkHvn.js","assets/index-BIlHQQoC.js","assets/index-Bl5GVxFi.css"])))=>i.map(i=>d[i]);
+import{n as e,r as t}from"./index-BIlHQQoC.js";async function n(n,r){let[i,a]=await Promise.all([t(()=>import(`./pdf-CCzBkHvn.js`),__vite__mapDeps([0,1,2])),t(()=>import(`./pdf.worker.min-BmSZNfKQ.js`),[])]);i.GlobalWorkerOptions.workerSrc=a.default;let o=await i.getDocument({data:new Uint8Array(n)}).promise,s=[];try{for(let t=1;t<=o.numPages;t++){let n=await o.getPage(t),i=await n.getTextContent(),a=``;for(let e of i.items)`str`in e&&(a+=e.str+(e.hasEOL?`
+`:` `));s.push(e(a)),n.cleanup(),r?.(t,o.numPages)}}finally{o.destroy()}return s}export{n as textoDePDF};
