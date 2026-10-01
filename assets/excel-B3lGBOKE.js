@@ -1,1 +1,0 @@
-import{r as e,t}from"./index-BIlHQQoC.js";async function n(n){if(/\.(csv|txt)$/i.test(n.name)||n.type===`text/csv`)return t(await n.text());let{readSheet:r}=await e(async()=>{let{readSheet:e}=await import(`./universal-CE99SjNY.js`);return{readSheet:e}},[]);return await r(await n.arrayBuffer())}export{n as leerHoja};
